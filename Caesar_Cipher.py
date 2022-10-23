@@ -37,8 +37,8 @@ while choice:
   direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
   text = input("Type your message:\n").lower()
   shift = int(input("Type the shift number:\n"))
-caesar(plaintext=text, shift_amount=shift, cipher_direction=direction)
-result = input('Type "yes" if you want to continue playing, "no" to stop.\n')
-if result == "no":
-  choice = False
-  print('Goodbye')
+  caesar(plaintext=text, shift_amount=shift, cipher_direction=direction)
+  result = input('Type "yes" if you want to continue playing, "no" to stop.\n')
+  if result == "no":
+    choice = False
+    print('Goodbye')
